@@ -5,7 +5,9 @@
   "description": "Backend for the AppSync Masterclass demo app",
   "main": "index.js",
   "scripts": {
-    "sls": "sls"
+    "sls": "sls",
+    "exportEnv": "sls export-env",
+    "integration-test": "jest --verbose ./__tests__/test_cases/integration"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,13 @@
   },
   "homepage": "https://github.com/pedroMartinez1515/appsyncmasterclass-backend#readme",
   "devDependencies": {
+    "@types/jest": "^27.4.1",
     "aws-sdk": "^2.1090.0",
+    "dotenv": "^16.0.0",
+    "jest": "^27.5.1",
     "serverless": "2.4.0",
     "serverless-appsync-plugin": "^1.12.1",
+    "serverless-export-env": "1.4.0",
     "serverless-iam-roles-per-function": "^3.2.0"
   },
   "dependencies": {

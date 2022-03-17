@@ -1,5 +1,5 @@
 service: appsyncmasterclass-backend
-frameworkVersion: "2"
+frameworkVersion: '2'
 
 plugins:
   - serverless-appsync-plugin
@@ -97,5 +97,9 @@ resources:
   Outputs:
     AwsRegion:
       Value: ${self:custom.region}
+
     CognitoUserPoolId:
       Value: !Ref CognitoUserPool
+
+    WebCognitoUserPoolClientId:
+      Value: !Ref WebUserPoolClient

@@ -7,6 +7,7 @@
   "scripts": {
     "sls": "sls",
     "exportEnv": "sls export-env",
+    "test": "jest --verbose ./__tests__/test_cases/unit",
     "integration-test": "jest --verbose ./__tests__/test_cases/integration",
     "e2e-test": "jest --verbose ./__tests__/test_cases/e2e"
   },
@@ -23,6 +24,8 @@
   "homepage": "https://github.com/pedroMartinez1515/appsyncmasterclass-backend#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "amplify-appsync-simulator": "^2.4.1",
+    "amplify-velocity-template": "^1.4.8",
     "aws-sdk": "^2.1090.0",
     "dotenv": "^16.0.0",
     "jest": "^27.5.1",

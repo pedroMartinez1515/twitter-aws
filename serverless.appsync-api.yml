@@ -10,6 +10,10 @@ mappingTemplates:
   - type: Query
     field: getMyProfile
     dataSource: usersTable
+
+  - type: Mutation
+    field: editMyProfile
+    data:Source: usersTable
     # request: Query.getMyProfile.request.vtl #This is the explicit path but if I dont put anything in the request the result will be the same
     # response: Query.getMyProfile.response.vtl #Same thing as above
 

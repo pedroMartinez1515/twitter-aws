@@ -13,7 +13,7 @@ module.exports.handler = async (event) => {
     Key: {
       id: tweetId
     }
-  }).promise()
+  }).promise() 
 
   const tweet = getTweetResp.Item
   if (!tweet) {

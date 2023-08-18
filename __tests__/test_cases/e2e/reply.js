@@ -12,6 +12,7 @@ describe('Given authenticated users, user A, B and C', () => {
     userB = await given.an_authenticated_user()
     userC = await given.an_authenticated_user()
     userAsTweet = await when.a_user_calls_tweet(userA, text)
+    // console.log(userAsTweet)
   })
 
   describe("When user B replies to user A's tweet", () => {

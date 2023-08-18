@@ -2,6 +2,7 @@ require('dotenv').config()
 const given = require('../../steps/given')
 const when = require('../../steps/when')
 const chance = require('chance').Chance()
+const lodashGet = require('lodash/get')
 
 describe('Given authenticated users, user A, B and C', () => {
   let userA, userB, userC, userAsTweet
@@ -17,7 +18,7 @@ describe('Given authenticated users, user A, B and C', () => {
     let usersBsReply
     const replyText = chance.string({ length: 16 })
     beforeAll(async () => {
-      usersBsReply = await when.a_user_calls_reply(userB, userAsTweet.id, replyText)
+      usersBsReply = await when.a_user_calls_reply(userB, lodashGet(userAsTweet,'id'), replyText)
     })
 
     it('User B should see his reply when he calls getTweets', async () => {

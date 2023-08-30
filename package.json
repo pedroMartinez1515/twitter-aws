@@ -24,23 +24,23 @@
   },
   "homepage": "https://github.com/pedroMartinez1515/appsyncmasterclass-backend#readme",
   "devDependencies": {
-    "@types/jest": "^27.4.1",
-    "amplify-appsync-simulator": "^2.4.1",
-    "amplify-velocity-template": "^1.4.8",
-    "async-retry": "^1.3.3",
-    "aws-sdk": "^2.1090.0",
+    "@types/jest": "^26.0.15",
+    "amplify-appsync-simulator": "^1.23.8",
+    "amplify-velocity-template": "^1.3.4",
+    "async-retry": "^1.3.1",
+    "aws-sdk": "^2.778.0",
     "axios": "^0.21.0",
-    "dotenv": "^16.0.0",
-    "jest": "^27.5.1",
+    "dotenv": "^8.2.0",
+    "jest": "^26.6.1",
     "serverless": "2.4.0",
-    "serverless-appsync-plugin": "^1.12.1",
-    "serverless-export-env": "1.4.0",
-    "serverless-iam-roles-per-function": "^3.2.0",
-    "serverless-manifest-plugin": "^1.0.9"
+    "serverless-appsync-plugin": "^1.4.0",
+    "serverless-export-env": "^1.4.0",
+    "serverless-iam-roles-per-function": "^2.0.2",
+    "serverless-manifest-plugin": "^1.0.6"
   },
   "dependencies": {
-    "chance": "^1.1.8",
-    "lodash": "^4.17.21",
+    "chance": "^1.1.7",
+    "lodash": "^4.17.20",
     "ulid": "^2.3.0"
   }
 }

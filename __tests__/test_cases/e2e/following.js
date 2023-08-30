@@ -23,8 +23,6 @@ describe('Given authenticated users, user A and B', () => {
 
     it("User A should see following as true when viewing user B's profile", async () => {
       const { following, followedBy } = await when.a_user_calls_getProfile(userA, userBsProfile.screenName)
-      console.log(following)
-      console.log(followedBy)
 
       expect(following).toBe(true)
       expect(followedBy).toBe(false)
